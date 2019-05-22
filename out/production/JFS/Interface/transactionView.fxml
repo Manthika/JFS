@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/test.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TransactionView">
+   <children>
+      <Label layoutX="224.0" layoutY="20.0" styleClass="heading-label" text="TRANSACTIONS" />
+      <Button fx:id="backButton" layoutX="39.0" layoutY="19.0" mnemonicParsing="false" onAction="#backButtonClickedtable" text="BACK" />
+      <TableView fx:id="tTable" layoutX="21.0" layoutY="176.0" prefHeight="197.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="tIdC" prefWidth="24.0" styleClass="tab" text="ID" />
+          <TableColumn fx:id="tNameC" prefWidth="109.0" text="CUSTOMER NAME" />
+            <TableColumn fx:id="tEmailC" prefWidth="104.0" text="EMAIL" />
+            <TableColumn fx:id="tAmountC" prefWidth="69.0" text="AMOUNT" />
+            <TableColumn fx:id="tBoughtC" prefWidth="121.0" text="THINGS BOUGHT" />
+            <TableColumn fx:id="tDateC" prefWidth="130.0" text="DATE/TIME" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="67.0" styleClass="normal-label" text="SEARCH BY CUSTOMER NAME" />
+      <TextField fx:id="searchName" layoutX="194.0" layoutY="63.0" promptText="ENTER NAME" />
+      <Label layoutX="432.0" layoutY="44.0" text="SELECT BY DATE" />
+      <ComboBox fx:id="sYear" layoutX="508.0" layoutY="63.0" prefHeight="25.0" prefWidth="78.0" styleClass="combo-box" />
+      <ComboBox fx:id="sMonth" layoutX="441.0" layoutY="63.0" prefHeight="25.0" prefWidth="60.0" />
+      <ComboBox fx:id="sDate" layoutX="376.0" layoutY="63.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="nameSearchBtn" layoutX="243.0" layoutY="93.0" mnemonicParsing="false" onAction="#nameSearchBtnClicked" text="SEARCH" />
+      <Button fx:id="dateSelectBtn" layoutX="467.0" layoutY="93.0" mnemonicParsing="false" onAction="#dateSelectBtnClicked" text="SELECT" />
+      <Button fx:id="sortById" layoutX="21.0" layoutY="93.0" mnemonicParsing="false" onAction="#sortByIdClicked" text="SORT BY AMOUNT" />
+      <TextField fx:id="sbyQ" layoutX="28.0" layoutY="135.0" />
+      <Button fx:id="sByQuant" layoutX="183.0" layoutY="135.0" mnemonicParsing="false" onAction="#sByQuantClicked" text="SEARCH" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/test.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerView">
+   <children>
+      <ComboBox fx:id="flTypes" layoutX="60.0" layoutY="202.0" prefWidth="150.0" promptText="SELECT TYPE" />
+      <ComboBox fx:id="siTypes" layoutX="247.0" layoutY="200.0" prefWidth="150.0" promptText="SELECT TYPE" />
+      <ComboBox fx:id="swTypes" layoutX="431.0" layoutY="200.0" prefWidth="150.0" promptText="SELECT TYPE" />
+      <JFXTextField fx:id="flQuantity" alignment="CENTER_RIGHT" layoutX="61.0" layoutY="236.0" prefHeight="37.0" prefWidth="150.0" promptText="QUANTITY" text="1" />
+      <JFXTextField fx:id="swQuantity" alignment="CENTER_RIGHT" layoutX="432.0" layoutY="234.0" prefHeight="37.0" prefWidth="150.0" promptText="QUANTITY" text="1" />
+      <JFXTextField fx:id="siQuantity" alignment="CENTER_RIGHT" layoutX="248.0" layoutY="234.0" prefHeight="37.0" prefWidth="150.0" promptText="QUANTITY" text="1" />
+      <Label layoutX="203.0" layoutY="24.0" prefHeight="25.0" prefWidth="157.0" styleClass="common-label" text="BUY PRODUCTS" />
+      <Button fx:id="vmyacc" layoutX="448.0" layoutY="5.0" mnemonicParsing="false" onAction="#vmyaccClicked" prefHeight="39.0" prefWidth="177.0" text="View my account" />
+      <Button fx:id="inqButton" layoutX="448.0" layoutY="47.0" mnemonicParsing="false" onAction="#inqButtonCliciked" prefHeight="39.0" prefWidth="177.0" text="Inquiries" />
+      <Button fx:id="flAddButton" layoutX="103.0" layoutY="283.0" mnemonicParsing="false" onAction="#flAddButtonClicked" text="ADD" />
+      <Button fx:id="siAddButton" layoutX="291.0" layoutY="283.0" mnemonicParsing="false" onAction="#siAddButtonClicked" text="ADD" />
+      <Button fx:id="swAddButton" layoutX="472.0" layoutY="283.0" mnemonicParsing="false" onAction="#swAddButtonClicked" text="ADD" />
+      <Label layoutX="128.0" layoutY="151.0" prefHeight="17.0" prefWidth="28.0" styleClass="common-label" text="FL" />
+      <Label layoutX="486.0" layoutY="158.0" prefHeight="17.0" prefWidth="28.0" styleClass="common-label" text="SW" />
+      <Label layoutX="302.0" layoutY="158.0" prefHeight="17.0" prefWidth="28.0" styleClass="common-label" text="SI" />
+      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="VIEW CART" />
+      <Button layoutX="138.0" layoutY="353.0" mnemonicParsing="false" text="CLEAR CART" />
+      <Button fx:id="checkoutButton" layoutX="467.0" layoutY="344.0" mnemonicParsing="false" onAction="#checkoutButtonClicked" prefHeight="25.0" prefWidth="133.0" text="CHECKOUT" />
+      <Label fx:id="flCartPrice" layoutX="262.0" layoutY="330.0" prefHeight="25.0" prefWidth="118.0" styleClass="common-label" text="CART PRICE" />
+      <Label fx:id="customerEmail" layoutX="195.0" layoutY="54.0" prefHeight="17.0" prefWidth="112.0" styleClass="common-label" text="customer email" />
+      <Button fx:id="logoutButton" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="LOG OUT" />
+      <Label fx:id="siCartPrice" layoutX="263.0" layoutY="351.0" prefHeight="25.0" prefWidth="118.0" styleClass="common-label" text="CART PRICE" />
+      <Label fx:id="swCartPrice" layoutX="262.0" layoutY="372.0" prefHeight="25.0" prefWidth="118.0" styleClass="common-label" text="CART PRICE" />
+      <Button fx:id="viewTransButton" layoutX="450.0" layoutY="92.0" mnemonicParsing="false" onAction="#viewTransButtonClicked" text="View My Transactions" />
+   </children>
+</AnchorPane>

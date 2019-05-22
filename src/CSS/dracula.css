@@ -1,0 +1,44 @@
+
+
+*{
+	-fx-primary : 	#2B2B2B;
+	-fx-secondary : #9b660a;
+	-fx-primarytext : #B2B2B2;
+	-fx-lable : #eaeaea;
+}
+
+.root{
+	-fx-background-color: -fx-primary;
+}
+
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-secondary;
+}
+
+
+.common-label{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primarytext;
+}

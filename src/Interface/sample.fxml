@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/dracula.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="227.0" layoutY="246.0" prefHeight="17.0" prefWidth="127.0" styleClass="common-label" text="Don't have an account?" />
+      <Label layoutX="207.0" layoutY="-19.0" prefHeight="74.0" prefWidth="182.0" styleClass="common-label" text="JFS" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="-19.0">
+         <font>
+            <Font name="Matura MT Script Capitals" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="79.0" prefHeight="17.0" prefWidth="118.0" styleClass="common-label" text="Jeff's Fishing Shack" textAlignment="CENTER">
+         <font>
+            <Font name="Marlett" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="186.0" layoutY="370.0" mnemonicParsing="false" onAction="#newsletterButtonClicked" prefHeight="25.0" prefWidth="210.0" text="Send me Updates" />
+      <Label layoutX="111.0" layoutY="297.0" prefHeight="17.0" prefWidth="378.0" styleClass="common-label" text="Or sign up for The free newsletter covering the top industry headlines" />
+      <JFXTextField fx:id="newsletterEmail" layoutX="195.0" layoutY="326.0" prefHeight="25.0" prefWidth="191.0" promptText="Email" />
+      <JFXTextField fx:id="loginUserName" layoutX="203.0" layoutY="117.0" prefHeight="25.0" prefWidth="191.0" promptText="Username (email)" />
+      <JFXPasswordField fx:id="loginPassword" layoutX="203.0" layoutY="166.0" prefHeight="25.0" prefWidth="191.0" promptText="Password" />
+      <FontAwesomeIconView glyphName="USER" layoutX="171.0" layoutY="142.0" size="25.0" wrappingWidth="15.0" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="170.0" layoutY="189.0" size="25.0" wrappingWidth="15.0" />
+      <JFXButton fx:id="loginButton" layoutX="264.0" layoutY="213.0" onAction="#loginButtonClicked" text="LOGIN" />
+      <JFXButton fx:id="regButton" layoutX="257.0" layoutY="267.0" onAction="#registerButtonClicked" text="REGISTER" />
+   </children>
+</AnchorPane>

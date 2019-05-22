@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewMyAccount">
+    <children>
+        <Label layoutX="212.0" layoutY="14.0" prefHeight="23.0" prefWidth="147.0" text="UPDATE YOUR ACCOUNT">
+
+        </Label>
+        <Label layoutX="40.0" layoutY="64.0" prefHeight="17.0" prefWidth="114.0" text="First Name:*" />
+        <TextField fx:id="firstName" layoutX="194.0" layoutY="60.0" prefHeight="25.0" prefWidth="195.0" />
+        <TextField fx:id="lastName" layoutX="194.0" layoutY="97.0" prefHeight="25.0" prefWidth="195.0" />
+        <Label layoutX="40.0" layoutY="101.0" prefHeight="17.0" prefWidth="114.0" text="Last Name:*" />
+        <TextField fx:id="email" layoutX="194.0" layoutY="135.0" prefHeight="25.0" prefWidth="195.0" />
+        <Label layoutX="40.0" layoutY="139.0" prefHeight="17.0" prefWidth="114.0" text="Email:*" />
+        <TextField fx:id="mobile" layoutX="194.0" layoutY="173.0" prefHeight="25.0" prefWidth="195.0" />
+        <Label layoutX="40.0" layoutY="177.0" prefHeight="17.0" prefWidth="114.0" text="Mobile:" />
+        <TextField fx:id="occupation" layoutX="194.0" layoutY="211.0" prefHeight="25.0" prefWidth="195.0" />
+        <Label layoutX="40.0" layoutY="215.0" prefHeight="17.0" prefWidth="114.0" text="Occupation" />
+        <Label layoutX="40.0" layoutY="251.0" prefHeight="17.0" prefWidth="114.0" text="Address:" />
+        <Label layoutX="452.0" layoutY="56.0" prefHeight="17.0" prefWidth="114.0" text="Password:*" />
+        <PasswordField fx:id="password" layoutX="427.0" layoutY="85.0" />
+        <PasswordField fx:id="confirmPassword" layoutX="427.0" layoutY="118.0" />
+        <Label layoutX="445.0" layoutY="165.0" prefHeight="17.0" prefWidth="114.0" text="Notes About you" />
+        <TextField fx:id="address" layoutX="194.0" layoutY="256.0" prefHeight="48.0" prefWidth="195.0" />
+        <TextField fx:id="notes" layoutX="438.0" layoutY="197.0" prefHeight="108.0" prefWidth="128.0" />
+        <Label fx:id="errorFirstName" layoutX="194.0" layoutY="81.0" prefHeight="17.0" prefWidth="35.0" text="Label" />
+        <Label fx:id="errorLastName" layoutX="203.0" layoutY="122.0" text="Label" />
+        <Label fx:id="errorEmail" layoutX="208.0" layoutY="157.0" text="Label" />
+        <Label fx:id="errorMobile" layoutX="154.0" layoutY="192.0" text="Label" />
+        <Label fx:id="errorPassword" layoutX="488.0" layoutY="144.0" text="Label" />
+        <Button fx:id="updateButton" layoutX="441.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="31.0" prefWidth="136.0" text="UPDATE &amp; LOGOUT">
+
+        </Button>
+        <Button fx:id="backButton" layoutX="71.0" layoutY="13.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="25.0" prefWidth="59.0" text="Back" />
+    </children>
+
+</AnchorPane>

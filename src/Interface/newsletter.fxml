@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Newsletter">
+   <children>
+      <Label layoutX="251.0" layoutY="14.0" text="NEWSLETTER" />
+      <Label layoutX="72.0" layoutY="108.0" text="Subject" />
+      <Label layoutX="72.0" layoutY="140.0" text="Body" />
+      <TextField fx:id="subject" layoutX="151.0" layoutY="104.0" prefHeight="25.0" prefWidth="422.0" promptText="SET THE NEWSLETTER SUBJECT HERE" />
+      <TextArea fx:id="body" layoutX="151.0" layoutY="140.0" prefHeight="200.0" prefWidth="422.0" promptText="SET THE NEWSLETTER BODY HERE" />
+      <Button fx:id="backButton" layoutX="46.0" layoutY="23.0" mnemonicParsing="false" onAction="#backButtonClicked" text="BACK" />
+      <Button fx:id="sendButton" layoutX="502.0" layoutY="352.0" mnemonicParsing="false" onAction="#sendButtonClicked" text="SEND" />
+   </children>
+</AnchorPane>

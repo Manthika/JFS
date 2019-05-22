@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OwnerView">
+   <children>
+      <Label layoutX="231.0" layoutY="38.0" prefHeight="17.0" prefWidth="159.0" text="OWNER VIEW" />
+      <Button fx:id="customerViewButton" layoutX="98.0" layoutY="143.0" mnemonicParsing="false" onAction="#customerViewButtonClicked" prefHeight="51.0" prefWidth="98.0" text="Customer View" />
+      <Button fx:id="adminPanelButton" layoutX="401.0" layoutY="143.0" mnemonicParsing="false" onAction="#adminPanelButtonClicked" prefHeight="51.0" prefWidth="107.0" text="Admin Panel" />
+      <Button fx:id="logoutButton" layoutX="491.0" layoutY="26.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="LOG OUT" />
+   </children>
+</AnchorPane>
